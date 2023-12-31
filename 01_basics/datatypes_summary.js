@@ -15,3 +15,20 @@ let myObj ={
 const myFunction = function(){
     console.log("Hello World");
 }
+//++++++++++++++++++++++++++++++++
+//Stack (primitive datatypes , uses copy of elements) , Heap (Non-Primitive datatypes, uses reference of elements)
+let youtubeChannelName = "sreejadotcom"
+let anotherName = youtubeChannelName
+anotherName = "ChaiaurCode" // copy m change hua h toh reflect hoga original value change nhi hogi
+
+console.log(youtubeChannelName)
+console.log(anotherName)
+//Non Primitive Datatypes , Reference 
+let userOne = {
+    email:"googledotcom",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+userTwo.email = "sreejadotcom" //(userOne and userTwo dono ke emails change ho jayenge as value here is passed by reference in case of non primitive datatypes)
+console.log(userOne.email)
+console.log(userTwo.email)
