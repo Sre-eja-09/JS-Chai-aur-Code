@@ -1,6 +1,7 @@
 //Arrays
 //array's copy operation creates shallow copy.All the in-built copy operations with any javascript objects create shallow copies instead of deep copies 
 //Shallow copies are the copies which share the same reference point
+// arrays are heterogeneous collections of elements of any type
 const myArr = [0,1,2,3,4]
 //console.log(myArr[0])
 const myArr2 = new Array(1,2,3,4)
