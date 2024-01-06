@@ -18,4 +18,13 @@ console.log(JsUser["full Name"])
 //console.log(JsUser.full Name) //this will throw error as discussed above
 
 const mySym = Symbol("key1") 
-console.log(JsUser.mySym)
+console.log(JsUser[mySym]) // when we have to keep the data type as symbol we use square brackets
+JsUser.email = "sreeja@chatgpt.com"//the values can be overwritten like this 
+//but if you want to freeze the values of the object we can use the freeze function 
+//Object.freeze(JsUser);
+JsUser.email="sreeja@1234.com"//this cannot be overwritten now as it has been freezed
+console.log(JsUser.email);
+JsUser.greeting = function(){
+    console.log("Hello JSUser")
+}
+console.log(JsUser.greeting); 
